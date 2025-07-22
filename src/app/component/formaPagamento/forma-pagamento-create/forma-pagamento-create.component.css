@@ -61,7 +61,7 @@ opacity: 0.3;
 filter: blur(4px);
 }
 div{
-display: flex; 
-justify-content: center; 
-margin-bottom: 16px;
+  display: flex; 
+  justify-content: center; 
+  margin-bottom: 16px;
 }

@@ -35,8 +35,14 @@
           <input matInput placeholder="Modelo" [(ngModel)]="product.proModelo" name="proModelo">
         </mat-form-field>
 
-        <mat-form-field appearance="fill">
-          <input matInput placeholder="Categoria" [(ngModel)]="product.proCategoria" name="proCategoria">
+        <mat-form-field>
+          <mat-label>Categoria</mat-label>
+          <mat-select [(ngModel)]="product.proCategoria" name="Categoria">
+              <mat-option value="Consoles">Consoles</mat-option>
+              <mat-option value="Acessórios">Acessórios</mat-option>
+              <mat-option value="Hardware Gamer (PC)">Hardware Gamer (PC)</mat-option>
+              <mat-option value="Moda Gamer">Moda Gamer</mat-option>
+          </mat-select>
         </mat-form-field>
 
         <mat-form-field appearance="fill">
