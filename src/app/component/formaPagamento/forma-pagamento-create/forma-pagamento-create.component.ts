@@ -15,6 +15,8 @@ export class FormaPagamentoCreateComponent {
     fpgStatus: '',
     fpgPermiteParcelamento: '',
     fpgNumeroMaximoParcelas: null,
+    fpgAceitaCartaoInternacional: '',
+    fpgComprovanteNecessario: '',
     fpgTaxaAdiciona: null,
     fpgTipo: '',
     fpgQtdParcela: null

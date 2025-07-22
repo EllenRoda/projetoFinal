@@ -30,15 +30,27 @@
       </mat-form-field>
 
       <mat-form-field appearance="fill">
-        <input matInput type="number" placeholder="Número Maximo de Parcelas" [(ngModel)]="formaPagamento.fpgNumeroMaximoParcelas" name="fpgNumeroMaximoParcelas">
+        <mat-label>Aceita Cartão Internacional</mat-label>
+          <mat-select [(ngModel)]="formaPagamento.fpgAceitaCartaoInternacional" name="Aceita Cartão Internacional">
+            <mat-option value="Sim">Sim</mat-option>
+            <mat-option value="Não">Não</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Comprovante Necessario" [(ngModel)]="formaPagamento.fpgComprovanteNecessario" name="fpgComprovanteNecessario">
       </mat-form-field>
 
       <mat-form-field appearance="fill">
-        <input matInput type="number" placeholder="Quantidade de Parcela" [(ngModel)]="formaPagamento.fpgQtdParcela" name="fpgQtdParcela">
+        <input matInput type="number" placeholder="Número Maximo de Parcelas" [(ngModel)]="formaPagamento.fpgNumeroMaximoParcelas" name="fpgNumeroMaximoParcelas" min="0">
       </mat-form-field>
 
       <mat-form-field appearance="fill">
-        <input matInput type="number" placeholder="Taxa Adiciona" [(ngModel)]="formaPagamento.fpgTaxaAdiciona" name="fpgTaxaAdiciona">
+        <input matInput type="number" placeholder="Quantidade de Parcela" [(ngModel)]="formaPagamento.fpgQtdParcela" name="fpgQtdParcela" min="0">
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput type="number" placeholder="Taxa Adiciona" [(ngModel)]="formaPagamento.fpgTaxaAdiciona" name="fpgTaxaAdiciona" min="0">
       </mat-form-field>
       </div>
     </form>

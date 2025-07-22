@@ -27,7 +27,8 @@ export class ProductCreateComponent implements OnInit {
     proCodigoBarras: '',
     proDataCadastro: null,
     proDataAtualizacao: null,
-    proAtivo: ''
+    proAtivo: '',
+    proFreteGratis: ''
   }
 
   // Injeta o ProductService e o Router no construtor

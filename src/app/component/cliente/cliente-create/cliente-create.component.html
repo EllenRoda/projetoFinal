@@ -11,13 +11,26 @@
             <input matInput placeholder="Nome" [(ngModel)]="cliente.nome" name="nome">
         </mat-form-field>
         <mat-form-field appearance="fill">
-            <input matInput placeholder="CPF / CNPJ" [(ngModel)]="cliente.cpfCnpj" name="cpfCnpj">
+            <input matInput placeholder="CPF" [(ngModel)]="cliente.cpfCnpj" name="cpfCnpj">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput type="string" [matDatepicker]="picker1" placeholder="Data Nascimento" [(ngModel)]="cliente.dataNascimento" name="dataNascimento">
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+        <mat-form-field>
+            <mat-label>Estado Civil</mat-label>
+            <mat-select [(ngModel)]="cliente.estadoCivil" name="ativo">
+                <mat-option value="Solteiro">Solteiro</mat-option>
+                <mat-option value="Casado">Casado</mat-option>
+                <mat-option value="Divorciado">Divorciado</mat-option>
+                <mat-option value="Separado">Separado</mat-option>
+                <mat-option value="Viúvo">Viúvo</mat-option>
+                <mat-option value="União Estável">União Estável</mat-option>
+            </mat-select>
         </mat-form-field>
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Data Nascimento" [(ngModel)]="cliente.dataNascimento" name="dataNascimento">
-        </mat-form-field>
-        <mat-form-field appearance="fill">
-            <input matInput placeholder="Forma de Pagamento" [(ngModel)]="cliente.formaPagamento" name="formaPagamento">
+            <input matInput placeholder="profissão" [(ngModel)]="cliente.profissao" name="profissao">
         </mat-form-field>
         <mat-form-field appearance="fill">
             <input matInput placeholder="Status" [(ngModel)]="cliente.status" name="status">

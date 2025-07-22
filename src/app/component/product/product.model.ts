@@ -16,4 +16,5 @@ export interface Product
     proDataCadastro: string | null
     proDataAtualizacao: string | null
     proAtivo: string
+    proFreteGratis: string
 }

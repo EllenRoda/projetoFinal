@@ -60,6 +60,14 @@
         </mat-form-field>
 
         <mat-form-field>
+          <mat-label>Com Frete Gratis</mat-label>
+          <mat-select [(ngModel)]="product.proFreteGratis" name="ativo">
+              <mat-option value="Sim">Sim</mat-option>
+              <mat-option value="Não">Não</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field>
           <mat-label>Produto Ativo?</mat-label>
           <mat-select [(ngModel)]="product.proAtivo" name="ativo">
               <mat-option value="Ativo">Ativo</mat-option>

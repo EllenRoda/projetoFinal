@@ -8,4 +8,6 @@ export interface FormaPagamento
     fpgTipo: string
     fpgQtdParcela: number | null
     fpgTaxaAdiciona: number | null
+    fpgAceitaCartaoInternacional: string
+    fpgComprovanteNecessario: string
 }

@@ -13,7 +13,8 @@ cliente: Cliente = {
   nome: '',
   cpfCnpj: '',
   dataNascimento: '',
-  formaPagamento: '',
+  estadoCivil: '',
+  profissao: '',
   status: '',
 
   conCelular: '',

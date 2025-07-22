@@ -4,8 +4,9 @@ export interface Cliente
     nome: string
     cpfCnpj: string
     dataNascimento: string
-    formaPagamento: string
     status: string
+    estadoCivil: string
+    profissao: string
 
     conCelular: string
     conTelefoneComercial: string
