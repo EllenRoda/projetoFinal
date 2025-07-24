@@ -60,4 +60,15 @@ export class ProductService {
     /*Faz uma requisição DELETE para excluir o produto*/
     return this.http.delete<Product>(url)
   }
+
+  //Contador Produto
+  private _productCount = 0;
+
+  setProductCount(count: number) {
+  this._productCount = count;
+  }
+
+  getProductCount(): number {
+  return this._productCount;
+  }
 }

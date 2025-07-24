@@ -1,10 +1,29 @@
 <mat-card class="home mat-elevation-z3">
     <body>
     <span>
-    <mat-card-title class="title">Bora Site</mat-card-title>
+    <mat-card-title class="title">Bora Sistema</mat-card-title>
     <mat-card-subtitle class="subtitle">
         Sistema para exemplificar a construção de um cadastro em Angular
     </mat-card-subtitle>
     </span>
+
+    <div class="UmProduto">
+    <a class="card" mat-list-item routerLink="/products">
+      <div>
+        <h3><span>📦</span> produtos cadastrados: <p>{{ productCount }}</p></h3>
+    </div>
+    </a>
+
+    </div>
+
+    <div class="DoisFP">
+    <a class="card2" mat-list-item routerLink="/formapagamentos">
+      <div class="caixa">
+       <span class="icone">📦</span>
+       <span class="texto">As Forma de Pagamento Cadastradas:</span>
+       <span class="numero">0</span>
+    </div>
+    </a>
+    </div>
     </body>
 </mat-card>

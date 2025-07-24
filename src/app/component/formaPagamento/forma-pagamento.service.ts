@@ -29,33 +29,44 @@ export class FormaPagamentoService {
    return this.http.post<FormaPagamento>(this.baseUrl, formaPagamento)
  }
 
- /*Método para ler todos os produtos*/
+ /*Método para ler todos os FormaPagamentos*/
  read(): Observable<FormaPagamento[]> {
-   /*Faz uma requisição GET para pegar todos os produtos*/
+   /*Faz uma requisição GET para pegar todos os FormaPagamentos*/
    return this.http.get<FormaPagamento[]>(this.baseUrl)
  }
 
- /*Método para ler um produto específico pelo seu ID*/
+ /*Método para ler um FormaPagamento específico pelo seu ID*/
  readById(proId: string): Observable<FormaPagamento> {
-   /*ria a URL de requisição com o ID do produto*/
+   /*ria a URL de requisição com o ID do FormaPagamento*/
    const url = `${this.baseUrl}/${proId}`
-   /*Faz uma requisição GET para pegar um único produto*/
+   /*Faz uma requisição GET para pegar um único FormaPagamento*/
    return this.http.get<FormaPagamento>(url)
  }
 
- /*Método para atualizar um produto existente*/
+ /*Método para atualizar um FormaPagamento existente*/
  update(formaPagamento: FormaPagamento): Observable<FormaPagamento> {
-   /*Cria a URL de requisição com o ID do produto*/
+   /*Cria a URL de requisição com o ID do FormaPagamento*/
    const url = `${this.baseUrl}/${formaPagamento.fpgId}`
-   /*Faz uma requisição PUT para atualizar o produto no backend*/
+   /*Faz uma requisição PUT para atualizar o FormaPagamento no backend*/
    return this.http.put<FormaPagamento>(url, formaPagamento)
  }
 
- /*Método para excluir um produto*/
+ /*Método para excluir um FormaPagamento*/
  delete(proId: number): Observable<FormaPagamento> {
    /*Cria a URL de requisição com o ID do produto*/
    const url = `${this.baseUrl}/${proId}`
    /*Faz uma requisição DELETE para excluir o produto*/
    return this.http.delete<FormaPagamento>(url)
  }
+
+ //Contador FormaPagamento
+  private _formaPagamentoCount = 0;
+
+  setFormaPagamentoCount(count: number) {
+  this._formaPagamentoCount = count;
+  }
+
+  getFormaPagamentoCount(): number {
+  return this._formaPagamentoCount;
+  }
 }
