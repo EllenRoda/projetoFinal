@@ -4,7 +4,7 @@ export interface Cliente
     cliNome: string
     cliCpf: string
     dataNascimento: string
-    status: string
+    cliStatus: string
     estadoCivil: string
     profissao: string
 

@@ -15,7 +15,7 @@ cliente: Cliente = {
   dataNascimento: '',
   estadoCivil: '',
   profissao: '',
-  status: '',
+  cliStatus: '',
 
   conCelular: '',
   conTelefoneComercial: '',
@@ -45,7 +45,8 @@ createCliente(): void
   })
 }
 cancel(): void
-{
+ {
   this.router.navigate(['/clientes'])
+ }
 }
-}
+
