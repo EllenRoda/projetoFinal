@@ -8,10 +8,10 @@ import { Cliente } from '../cliente.model';
   templateUrl: './cliente-create.component.html',
   styleUrls: ['./cliente-create.component.css']
 })
-export class ClienteCreateComponent implements OnInit{
+export class ClienteCreateComponent {
 cliente: Cliente = {
-  nome: '',
-  cpfCnpj: '',
+  cliNome: '',
+  cliCpf: '',
   dataNascimento: '',
   estadoCivil: '',
   profissao: '',
@@ -41,11 +41,11 @@ createCliente(): void
 {
   this.clienteService.create(this.cliente).subscribe(() => {
     this.clienteService.showMessage('Cliente Criado!!!')
-    this.router.navigate(['/cliente'])
+    this.router.navigate(['/clientes'])
   })
 }
 cancel(): void
 {
-  this.router.navigate(['/cliente'])
+  this.router.navigate(['/clientes'])
 }
 }

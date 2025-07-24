@@ -1,8 +1,8 @@
 export interface Cliente
 {
-    id?: number
-    nome: string
-    cpfCnpj: string
+    cliId?: number
+    cliNome: string
+    cliCpf: string
     dataNascimento: string
     status: string
     estadoCivil: string

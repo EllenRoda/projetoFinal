@@ -8,10 +8,10 @@
     <form>
         <div class="form-grid">
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Nome" [(ngModel)]="cliente.nome" name="nome">
+            <input matInput placeholder="Nome" [(ngModel)]="cliente.cliNome" name="cliNome">
         </mat-form-field>
         <mat-form-field appearance="fill">
-            <input matInput placeholder="CPF" [(ngModel)]="cliente.cpfCnpj" name="cpfCnpj">
+            <input matInput placeholder="CPF" [(ngModel)]="cliente.cliCpf" name="cliCpf">
         </mat-form-field>
         <mat-form-field>
             <input matInput type="string" [matDatepicker]="picker1" placeholder="Data Nascimento" [(ngModel)]="cliente.dataNascimento" name="dataNascimento">

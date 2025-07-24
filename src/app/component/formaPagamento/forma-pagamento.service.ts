@@ -60,13 +60,13 @@ export class FormaPagamentoService {
  }
 
  //Contador FormaPagamento
-  private _formaPagamentoCount = 0;
+  private formaPagamentoCount = 0;
 
   setFormaPagamentoCount(count: number) {
-  this._formaPagamentoCount = count;
+  this.formaPagamentoCount = count;
   }
 
   getFormaPagamentoCount(): number {
-  return this._formaPagamentoCount;
+  return this.formaPagamentoCount;
   }
 }

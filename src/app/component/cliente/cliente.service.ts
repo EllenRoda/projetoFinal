@@ -9,7 +9,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ClienteService 
 {
-  baseUrl = "http://localhost:3001/cliente"
+  baseUrl = "http://localhost:8080/clientes"
+
   constructor(private snackBar: MatSnackBar, private http: HttpClient) {}
 
   showMessage(msg: string): void
@@ -29,19 +30,19 @@ export class ClienteService
   {
     return this.http.get<Cliente[]>(this.baseUrl)
   }
-  readById(id: string): Observable<Cliente>
+  readById(cliId: string): Observable<Cliente>
   {
-    const url = `${this.baseUrl}/${id}`
+    const url = `${this.baseUrl}/${cliId}`
     return this.http.get<Cliente>(url)
   }
   update(cliente: Cliente): Observable<Cliente>
   {
-    const url = `${this.baseUrl}/${cliente.id}`
+    const url = `${this.baseUrl}/${cliente.cliId}`
     return this.http.put<Cliente>(url, cliente)
   }
-  delete(id: number): Observable<Cliente>
+  delete(cliId: number): Observable<Cliente>
   {
-    const url = `${this.baseUrl}/${id}`
+    const url = `${this.baseUrl}/${cliId}`
     return this.http.delete<Cliente>(url)
   }  
 }

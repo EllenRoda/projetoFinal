@@ -80,7 +80,7 @@ const routes: Routes = [
   component: ClienteCrudComponent
 },
 {
-  path: "cliente/create",
+  path: "clientes/create",
   component: ClienteCreateComponent
 },
 ///////////////////////////Cliente FIM

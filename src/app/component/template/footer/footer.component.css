@@ -3,7 +3,6 @@
     bottom: 0; /*coloca toolbar na parte de baixa */
     display: flex; /*coloca no final da linha. sendo no lado direiro parte inferior*/
     justify-content: flex-end;
-    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/8143760-padrao-perfeito-com-icones-de-jogos-vetor.jpg');
 }
 
 .footer > span{
@@ -12,4 +11,5 @@
     color: rgb(255, 255, 255);
     background-color: black;
     font-family: 'Rockwell', Arial, sans-serif;
+    text-align: center;
 }
