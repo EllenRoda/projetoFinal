@@ -44,5 +44,16 @@ export class ClienteService
   {
     const url = `${this.baseUrl}/${cliId}`
     return this.http.delete<Cliente>(url)
-  }  
+  }
+  
+  //Contador Cliente
+  private _clienteCount = 0;
+
+  setClienteCount(count: number) {
+  this._clienteCount = count;
+  }
+
+  getClienteCount(): number {
+  return this._clienteCount;
+  }
 }

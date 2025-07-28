@@ -1,9 +1,12 @@
-<div class="top-actions">
-<input class="barra-pesquisa" type="text" placeholder="Pesquisar por Nome">
-<div class = "container">
-<button mat-raised-button (click)="navigateToProductCreate()" color="primary">
+<input 
+  type="text" 
+  placeholder="Pesquisar Produto" 
+  class="pesquisa">
+
+<div class="container">
+  <button mat-raised-button (click)="navigateToProductCreate()" color="primary">
     Novo Produto +
-</button>
+  </button>
 </div>
-</div>  
+
 <app-product-read></app-product-read>

@@ -1,38 +1,37 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Product } from 'src/app/component/product/product.model';
+import { ProductService } from 'src/app/component/product/product.service';
 
 @Component({
   selector: 'app-product-crud',
   templateUrl: './product-crud.component.html',
   styleUrls: ['./product-crud.component.css']
 })
-export class ProductCrudComponent implements OnInit {
 
-  produtos: any[] = []; // Lista original
-  produtosFiltrados: any[] = []; // Lista filtrada
-  filtroProduto: string = ''; // Texto da busca
+export class ProductCrudComponent implements OnInit
+{
+  searchTerm: string = '';
+  allProduct: Product[] = [];
+  filteredProduct: Product[] = [];
 
-  constructor(private router: Router) {}
-
+  constructor(
+    private router: Router,
+    private productService: ProductService
+  ) {}
   ngOnInit(): void {
-    this.carregarProdutos();
+    this.productService.read().subscribe(product => {
+      this.allProduct = product;
+      this.filteredProduct = product;
+    });
   }
-
-  carregarProdutos(): void {
-    this.produtos = [
-      { id: 1, nome: 'Mouse Gamer', precoCusto: 90, precoVenda: 120, marca: 'Redragon', categoria: 'Acessórios', status: 'Ativo' },
-    ];
-    this.produtosFiltrados = [...this.produtos];
+  navigateToProductCreate(): void
+  {
+    this.router.navigate(['/product/create'])
   }
-
-  filtrarProdutos(): void {
-    const texto = this.filtroProduto.toLowerCase().trim();
-    this.produtosFiltrados = this.produtos.filter(produto =>
-      produto.nome.toLowerCase().includes(texto)
-    );
-  }
-
-  navigateToProductCreate(): void {
-    this.router.navigate(['/products/create']);
+  filterProduct(): void {
+    const term = this.searchTerm.toLowerCase();
+    this.filteredProduct = this.allProduct.filter(p =>
+      (p.proNome.toLowerCase().includes(term)));
   }
 }

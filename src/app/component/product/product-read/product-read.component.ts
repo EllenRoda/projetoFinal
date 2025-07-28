@@ -1,5 +1,5 @@
 // Importa o decorator Component do Angular
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 // Importa a interface/modelo de Produto
 import { Product } from '../product.model';
@@ -13,6 +13,7 @@ import { ProductService } from '../product.service';
   styleUrls: ['./product-read.component.css'] // Caminho do CSS desse componente
 })
 export class ProductReadComponent {
+  @Input()
   // Declara um array de produtos, que vai ser preenchido depois
   products!: Product[]
 
