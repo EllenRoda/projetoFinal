@@ -72,19 +72,19 @@ div{
     border-radius: 5px; /* Cantos arredondados do botão */
     cursor: pointer; /* Cursor de mão ao passar por cima */
     transition: background-color 0.3s ease; /* Suaviza a mudança de cor ao passar o mouse */
-    background-color: #d45555; /* Cor de fundo vermelha suave */
+    background: linear-gradient(to bottom, rgb(117, 4, 4), #eb0a0a); /* Cor de fundo vermelha suave */
 }
 
 /* Efeito hover do botão "Voltar" */
 .btn-voltar:hover {
-    background-color: #a33b3b; /* Cor mais escura quando o mouse passa por cima */
+    background-color: #525252; /* Cor mais escura quando o mouse passa por cima */
 }
 .button{
     margin: 20px 15px 5px 15px;
     color: rgb(255, 255, 255);
     font-family: 'Rockwell', Arial, sans-serif;
     font-size: 26px;
-    background: linear-gradient(to bottom, rgb(117, 4, 4), #eb0a0a);
+    
 }
 .cor-normal{
   background-color: #ff0000;

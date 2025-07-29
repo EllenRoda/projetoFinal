@@ -22,26 +22,26 @@ export class ClienteService
         verticalPosition: "top"
       })
   }
-  create(cliente: Cliente): Observable<Cliente>
-  {
+  
+  create(cliente: Cliente): Observable<Cliente>{
     return this.http.post<Cliente>(this.baseUrl, cliente)
   }
-  read(): Observable<Cliente[]>
-  {
+
+  read(): Observable<Cliente[]>{
     return this.http.get<Cliente[]>(this.baseUrl)
   }
-  readById(cliId: string): Observable<Cliente>
-  {
+
+  readById(cliId: string): Observable<Cliente>{
     const url = `${this.baseUrl}/${cliId}`
     return this.http.get<Cliente>(url)
   }
-  update(cliente: Cliente): Observable<Cliente>
-  {
+
+  update(cliente: Cliente): Observable<Cliente>{
     const url = `${this.baseUrl}/${cliente.cliId}`
     return this.http.put<Cliente>(url, cliente)
   }
-  delete(cliId: number): Observable<Cliente>
-  {
+
+  delete(cliId: number): Observable<Cliente>{
     const url = `${this.baseUrl}/${cliId}`
     return this.http.delete<Cliente>(url)
   }

@@ -3,8 +3,8 @@ export interface Cliente
     cliId?: number
     cliNome: string
     cliCpf: string
-    dataNascimento: string
     cliStatus: string
+    dataNascimento: string
     estadoCivil: string
     profissao: string
 

@@ -12,15 +12,13 @@ export class ClienteCreateComponent {
 cliente: Cliente = {
   cliNome: '',
   cliCpf: '',
+  cliStatus: '',
   dataNascimento: '',
   estadoCivil: '',
   profissao: '',
-  cliStatus: '',
-
   conCelular: '',
   conTelefoneComercial: '',
   conEmail: '',
-
   endRua: '',
   endNumero: '',
   endCidade: '',

@@ -13,6 +13,9 @@
         <mat-form-field appearance="fill">
             <input matInput placeholder="CPF" [(ngModel)]="cliente.cliCpf" name="cliCpf">
         </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Status" [(ngModel)]="cliente.cliStatus" name="cliStatus">
+        </mat-form-field>
         <mat-form-field>
             <input matInput type="string" [matDatepicker]="picker1" placeholder="Data Nascimento" [(ngModel)]="cliente.dataNascimento" name="dataNascimento">
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
@@ -35,9 +38,7 @@
         <mat-form-field appearance="fill">
             <input matInput placeholder="profissão" [(ngModel)]="cliente.profissao" name="profissao">
         </mat-form-field>
-        <mat-form-field appearance="fill">
-            <input matInput placeholder="Status" [(ngModel)]="cliente.cliStatus" name="cliStatus">
-        </mat-form-field>
+        
         </div>
     </form>
 
