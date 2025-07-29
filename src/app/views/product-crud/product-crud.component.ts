@@ -21,17 +21,17 @@ export class ProductCrudComponent implements OnInit
   ) {}
   ngOnInit(): void {
     this.productService.read().subscribe(product => {
-      this.allProduct = product;
-      this.filteredProduct = product;
+      /*this.allProduct = product;
+      this.filteredProduct = product;*/
     });
   }
   navigateToProductCreate(): void
   {
     this.router.navigate(['/product/create'])
   }
-  filterProduct(): void {
+  /*filterProduct(): void {
     const term = this.searchTerm.toLowerCase();
     this.filteredProduct = this.allProduct.filter(p =>
       (p.proNome.toLowerCase().includes(term)));
-  }
+  }*/
 }

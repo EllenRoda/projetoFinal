@@ -1,6 +1,6 @@
 table{
     width: 100%;
-    background: linear-gradient(to bottom, rgb(117, 4, 4), #eb0a0a);
+    background: linear-gradient(to bottom, rgb(114, 5, 5), #020202);
 }
 
 .edit > i{
@@ -14,4 +14,10 @@ th
 {
     font-family: 'Rockwell', Arial, sans-serif;
     font-size: 30px;
+    color: #ffffff;
+}
+td{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
 }

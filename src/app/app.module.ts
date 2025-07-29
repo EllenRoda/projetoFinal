@@ -49,6 +49,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
+import { ProductVisuComponent } from './component/product/product-visu/product-visu.component';
+
 /*import { FilterPipe } from './filter.pipe';*/
 
 @NgModule({
@@ -78,6 +80,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     FormaPagamentoReadComponent,
     FormaPagamentoUpdateComponent,
     FormaPagamentoDeleteComponent,
+    ProductVisuComponent
     /*FilterPipe*/
   ],
   imports: [

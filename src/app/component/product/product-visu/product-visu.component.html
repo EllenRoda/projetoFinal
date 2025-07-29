@@ -1,0 +1,85 @@
+<mat-card class="fundo1">
+    <div class="cor-normal">
+    <mat-card-title>Visualizar Produto</mat-card-title>
+    </div>
+  
+    <form>
+     <div class="form-grid"> 
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Nome" [value]="product.proNome" disabled>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Preço de Custo" [value]="product.proPrecoCusto | currency:'BRL'" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Preço de Venda" [value]="product.proPrecoVenda | currency:'BRL'" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Marca" [value]="product.proMarca" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Modelo" [value]="product.proModelo" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Categoria" [value]="product.proCategoria" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Estoque" [value]="product.proEstoque" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Código de Barras" [value]="product.proCodigoBarras" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Cor" [value]="product.proCor" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Material" [value]="product.proMaterial" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Fabricante" [value]="product.proFabricante" disabled>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Com Frete Gratis?</mat-label>
+        <mat-select [value]="product.proFreteGratis" disabled>
+          <mat-option value="Sim">Sim</mat-option>
+          <mat-option value="Não">Não</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Produto Ativo?</mat-label>
+        <mat-select [value]="product.proAtivo" disabled>
+          <mat-option value="Ativo">Ativo</mat-option>
+          <mat-option value="Inativo">Inativo</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput [value]="product.proDataCadastro | date:'dd/MM/yyyy'" placeholder="Data de Cadastro" disabled>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput [value]="product.proDataAtualizacao | date:'dd/MM/yyyy'" placeholder="Data de Atualização" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Descrição" [value]="product.proDescricao" disabled>
+      </mat-form-field>
+     </div> 
+    </form>
+  
+    <div class="button">
+        <button mat-raised-button class="btn-voltar" (click)="voltar()">Voltar</button>
+    </div>
+  </mat-card>

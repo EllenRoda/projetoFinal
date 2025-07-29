@@ -1,19 +1,20 @@
 table{
-    width: 100%; /*A tabela vai ocupar toda a largura disponível do container. Esticadona, poderosa, dominando tudo.*/
-    background: linear-gradient(to bottom, rgb(117, 4, 4), #eb0a0a); /* Vermelho Escuro escuro para Vermelho vibrante */
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(114, 5, 5), #020202);
 }
 
 .edit > i{
-    color: #d9cd26; /*a cor do texto*/
+    color: #d9cd26;
 }
 
 .delete > i{
-    color: #e35e6b; /*a cor do texto*/
+    color: #e35e6b;
 }
 th
 {
-    font-family: 'Rockwell', Arial, sans-serif; /*tá escolhendo a fonte do texto*/
-    font-size: 20px; /*Isso deixa o texto do botão com 20 pixels de tamanho*/
+    font-family: 'Rockwell', Arial, sans-serif;
+    font-size: 30px;
+    color: #ffffff;
 }
 td{
     color: #ffffff;
