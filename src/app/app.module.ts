@@ -50,6 +50,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 
 import { ProductVisuComponent } from './component/product/product-visu/product-visu.component';
+import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
+import { FornecedorUpdateComponent } from './component/fornecedor/fornecedor-update/fornecedor-update.component';
+import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
 
 /*import { FilterPipe } from './filter.pipe';*/
 
@@ -80,7 +84,11 @@ import { ProductVisuComponent } from './component/product/product-visu/product-v
     FormaPagamentoReadComponent,
     FormaPagamentoUpdateComponent,
     FormaPagamentoDeleteComponent,
-    ProductVisuComponent
+    ProductVisuComponent,
+    ClienteUpdateComponent,
+    ClienteDeleteComponent,
+    FornecedorUpdateComponent,
+    FornecedorDeleteComponent
     /*FilterPipe*/
   ],
   imports: [

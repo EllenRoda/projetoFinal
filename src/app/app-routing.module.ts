@@ -14,6 +14,8 @@ import { FormaPagamentoCreateComponent } from './component/formaPagamento/forma-
 import { FormaPagamentoDeleteComponent } from './component/formaPagamento/forma-pagamento-delete/forma-pagamento-delete.component';
 import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-pagamento-update/forma-pagamento-update.component';
 import { ProductVisuComponent } from './component/product/product-visu/product-visu.component';
+import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
+import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
 
 const routes: Routes = [
 
@@ -30,25 +32,12 @@ const routes: Routes = [
 ///////////////////////////products FIM
 
 ///////////////////////////formaPagamento
-{
-  path: "formaPagamento",
-  component: FormaPagamentoCrudComponent
-},
-/*-----*/
-{
-  path: "formaPagamento/create",
-  component: FormaPagamentoCreateComponent
-},
-/*-----*/
-{
-  path: "formaPagamento/delete/:id",
-  component: FormaPagamentoDeleteComponent
-},
-/*-----*/
-{
-  path: "formaPagamento/update/:id",
-  component: FormaPagamentoUpdateComponent
-},
+
+{ path: "formaPagamento", component: FormaPagamentoCrudComponent },
+{ path: "formaPagamento/create", component: FormaPagamentoCreateComponent },
+{ path: "formaPagamento/delete/:id", component: FormaPagamentoDeleteComponent },
+{ path: "formaPagamento/update/:id", component: FormaPagamentoUpdateComponent },
+
 ///////////////////////////formaPagamento FIM
 
 ///////////////////////////fornecedores
@@ -71,6 +60,8 @@ const routes: Routes = [
   path: "clientes/create",
   component: ClienteCreateComponent
 },
+{ path: "clientes/delete/:id", component: ClienteDeleteComponent },
+{ path: "clientes/update/:id", component: ClienteUpdateComponent },
 ///////////////////////////Cliente FIM
 ];
 
