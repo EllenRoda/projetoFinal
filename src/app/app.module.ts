@@ -54,6 +54,9 @@ import { ClienteUpdateComponent } from './component/cliente/cliente-update/clien
 import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
 import { FornecedorUpdateComponent } from './component/fornecedor/fornecedor-update/fornecedor-update.component';
 import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-delete/fornecedor-delete.component';
+import { ClienteVisuComponent } from './component/cliente/cliente-visu/cliente-visu.component';
+import { FornecedorVisuComponent } from './component/fornecedor/fornecedor-visu/fornecedor-visu.component';
+import { FormaPagamentoVisuComponent } from './component/formaPagamento/forma-pagamento-visu/forma-pagamento-visu.component';
 
 /*import { FilterPipe } from './filter.pipe';*/
 
@@ -88,7 +91,10 @@ import { FornecedorDeleteComponent } from './component/fornecedor/fornecedor-del
     ClienteUpdateComponent,
     ClienteDeleteComponent,
     FornecedorUpdateComponent,
-    FornecedorDeleteComponent
+    FornecedorDeleteComponent,
+    ClienteVisuComponent,
+    FornecedorVisuComponent,
+    FormaPagamentoVisuComponent
     /*FilterPipe*/
   ],
   imports: [

@@ -1,1 +1,147 @@
-<p>cliente-update works!</p>
+<mat-card class="fundo1">
+    <div class="cor-normal">
+    <mat-card-title>Editar o Cliente</mat-card-title>
+    </div>
+    <div class="com-cor-diferente">
+        <mat-card-title>Informações Pessoais</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid">
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Nome" [(ngModel)]="cliente.cliNome" name="cliNome">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="CPF" [(ngModel)]="cliente.cliCpf" name="cliCpf">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Status" [(ngModel)]="cliente.cliStatus" name="cliStatus">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker1" placeholder="Data do Nascimento"
+                    [(ngModel)]="cliente.dataNascimento" name="dataNascimento">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Estado Civil</mat-label>
+                <mat-select [(ngModel)]="cliente.estadoCivil" name="estadoCivil">
+                    <mat-option value="Solteiro">Solteiro</mat-option>
+                    <mat-option value="Casado">Casado</mat-option>
+                    <mat-option value="Divorciado">Divorciado</mat-option>
+                    <mat-option value="Separado">Separado</mat-option>
+                    <mat-option value="Viúvo">Viúvo</mat-option>
+                    <mat-option value="União Estável">União Estável</mat-option>
+                </mat-select>
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Profissão" [(ngModel)]="cliente.profissao" name="profissao">
+            </mat-form-field>
+
+        </div>
+    </form>    
+    
+    <div class="com-cor-diferente">
+      <mat-card-title>Contato</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid">
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Celular" [(ngModel)]="cliente.conCelular" name="conCelular">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Telefone Comercial" [(ngModel)]="cliente.conTelefoneComercial" name="conTelefoneComercial">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="E-mail" [(ngModel)]="cliente.conEmail" name="conEmail">
+            </mat-form-field>
+        </div>
+    </form>
+
+    <div class="com-cor-diferente">
+    <mat-card-title>Endereco</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid">    
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Rua" [(ngModel)]="cliente.endRua" name="endRua">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Número" [(ngModel)]="cliente.endNumero" name="endNumero">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Cidade" [(ngModel)]="cliente.endCidade" name="endCidade">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Bairro" [(ngModel)]="cliente.endBairro" name="endBairro">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Complemento" [(ngModel)]="cliente.endComplemento" name="endComplemento">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Tipo de Residencia" [(ngModel)]="cliente.endTipoResidencia" name="endTipoResidencia">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="CEP" [(ngModel)]="cliente.endCep" name="endCep">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Estado</mat-label>
+                <mat-select [(ngModel)]="cliente.endEstado" name="endEstado">
+                    <mat-option value="Acre ( AC )">Acre "AC"</mat-option>
+                    <mat-option value="Alagoas ( AL )">Alagoas "AL"</mat-option>
+                    <mat-option value="Amapá ( AP )">Amapá "AP"</mat-option>
+                    <mat-option value="Amazonas ( AM )">Amazonas "AM"</mat-option>
+                    <mat-option value="Bahia ( BA )">Bahia "BA"</mat-option>
+                    <mat-option value="Ceará ( CE )">Ceará "CE"</mat-option>
+                    <mat-option value="Espírito Santo ( ES )">Espírito Santo "ES"</mat-option>
+                    <mat-option value="Goiás ( GO )">Goiás "GO"</mat-option>
+                    <mat-option value="Maranhão ( MA )">Maranhão "MA"</mat-option>
+                    <mat-option value="Mato Grosso ( MT )">Mato Grosso "MT"</mat-option>
+                    <mat-option value="Mato Grosso do Sul ( MS )">Mato Grosso do Sul "MS"</mat-option>
+                    <mat-option value="Minas Gerais ( MG )">Minas Gerais "MG"</mat-option>
+                    <mat-option value="Pará ( PA )">Pará "PA"</mat-option>
+                    <mat-option value="Paraíba ( PB )">Paraíba "PB"</mat-option>
+                    <mat-option value="Paraná ( PR )">Paraná "PR"</mat-option>
+                    <mat-option value="Pernambuco ( PE )">Pernambuco "PE"</mat-option>
+                    <mat-option value="Piauí ( PI )">Piauí "PI"</mat-option>
+                    <mat-option value="Rio de Janeiro ( RJ )">Rio de Janeiro "RJ"</mat-option>
+                    <mat-option value="Rio Grande do Norte ( RN )">Rio Grande do Norte "RN"</mat-option>
+                    <mat-option value="Rio Grande do Sul ( RS )">Rio Grande do Sul "RS"</mat-option>
+                    <mat-option value="Rondônia ( RO )">Rondônia "RO"</mat-option>
+                    <mat-option value="Roraima ( RR )">Roraima "RR"</mat-option>
+                    <mat-option value="Santa Catarina ( SC )">Santa Catarina "SC"</mat-option>
+                    <mat-option value="São Paulo ( SP )">São Paulo "SP"</mat-option>
+                    <mat-option value="Sergipe ( SE )">Sergipe "SE"</mat-option>
+                    <mat-option value="Tocantins ( TO )">Tocantins "TO"</mat-option>
+                    <mat-option value="Distrito Federal ( DF )">Distrito Federal "DF"</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="País" [value]="cliente.endPais" name="endPais" disabled>
+            </mat-form-field>
+
+        </div>
+    </form>
+
+    <button mat-raised-button (click)="updateCliente()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
