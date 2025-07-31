@@ -16,6 +16,7 @@ import { FormaPagamentoUpdateComponent } from './component/formaPagamento/forma-
 import { ProductVisuComponent } from './component/product/product-visu/product-visu.component';
 import { ClienteDeleteComponent } from './component/cliente/cliente-delete/cliente-delete.component';
 import { ClienteUpdateComponent } from './component/cliente/cliente-update/cliente-update.component';
+import { ClienteVisuComponent } from './component/cliente/cliente-visu/cliente-visu.component';
 
 const routes: Routes = [
 
@@ -52,16 +53,13 @@ const routes: Routes = [
 ///////////////////////////fornecedores FIM
 
 ///////////////////////////Cliente
-{
-  path: "clientes",
-  component: ClienteCrudComponent
-},
-{
-  path: "clientes/create",
-  component: ClienteCreateComponent
-},
+
+{ path: "clientes", component: ClienteCrudComponent },
+{ path: "clientes/create", component: ClienteCreateComponent },
 { path: "clientes/delete/:id", component: ClienteDeleteComponent },
 { path: "clientes/update/:id", component: ClienteUpdateComponent },
+{ path: 'clientes/visu/:id', component: ClienteVisuComponent },
+
 ///////////////////////////Cliente FIM
 ];
 
