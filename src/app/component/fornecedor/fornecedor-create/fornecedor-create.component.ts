@@ -10,7 +10,7 @@ import { Fornecedor } from '../fornecedor.model';
 })
 export class FornecedorCreateComponent implements OnInit{
 fornecedor: Fornecedor = {
-  nameFanatasia: '',
+  forNomeFantasia: '',
   razao_Social: '',
   cpfCnpj: '',
   status: '',

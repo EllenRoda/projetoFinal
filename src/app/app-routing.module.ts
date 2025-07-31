@@ -56,9 +56,9 @@ const routes: Routes = [
 
 { path: "clientes", component: ClienteCrudComponent },
 { path: "clientes/create", component: ClienteCreateComponent },
-{ path: "clientes/delete/:id", component: ClienteDeleteComponent },
-{ path: "clientes/update/:id", component: ClienteUpdateComponent },
-{ path: 'clientes/visu/:id', component: ClienteVisuComponent },
+{ path: "cliente/delete/:cliId", component: ClienteDeleteComponent },
+{ path: "cliente/update/:cliId", component: ClienteUpdateComponent },
+{ path: 'cliente/visu/:cliId', component: ClienteVisuComponent },
 
 ///////////////////////////Cliente FIM
 ];

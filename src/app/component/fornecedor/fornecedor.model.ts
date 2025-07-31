@@ -1,7 +1,7 @@
 export interface Fornecedor
 {
     id?: number
-    nameFanatasia: string
+    forNomeFantasia: string
     razao_Social: string
     cpfCnpj: string
     status: string
