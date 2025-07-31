@@ -46,7 +46,7 @@ export class ClienteService
     return this.http.delete<Cliente>(url)
   }
   
-  //Contador Cliente
+  // Total de Cliente
   private _clienteCount = 0;
 
   setClienteCount(count: number) {

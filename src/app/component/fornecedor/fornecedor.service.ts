@@ -30,23 +30,23 @@ export class FornecedorService
   {
     return this.http.get<Fornecedor[]>(this.baseUrl)
   }
-  readById(id: string): Observable<Fornecedor>
+  readById(forId: string): Observable<Fornecedor>
   {
-    const url = `${this.baseUrl}/${id}`
+    const url = `${this.baseUrl}/${forId}`
     return this.http.get<Fornecedor>(url)
   }
   update(fornecedor: Fornecedor): Observable<Fornecedor>
   {
-    const url = `${this.baseUrl}/${fornecedor.id}`
+    const url = `${this.baseUrl}/${fornecedor.forId}`
     return this.http.put<Fornecedor>(url, fornecedor)
   }
-  delete(id: number): Observable<Fornecedor>
+  delete(forId: number): Observable<Fornecedor>
   {
-    const url = `${this.baseUrl}/${id}`
+    const url = `${this.baseUrl}/${forId}`
     return this.http.delete<Fornecedor>(url)
   }
 
-  //Contador Fornecedor
+  // Total de Fornecedor
   private _fornecedorCount = 0;
 
   setFornecedorCount(count: number) {

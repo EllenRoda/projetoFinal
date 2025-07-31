@@ -1,11 +1,11 @@
 export interface Fornecedor
 {
-    id?: number
+    forId?: number
     forNomeFantasia: string
-    razao_Social: string
-    cpfCnpj: string
-    status: string
-    proDataCadastro: string | null
+    forRazaoSocial: string
+    forCpf: string
+    forStatus: string
+    forDataCadastro: string | null
     forResponsavel: string
 
     conCelular: string

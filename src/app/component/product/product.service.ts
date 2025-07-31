@@ -61,7 +61,7 @@ export class ProductService {
     return this.http.delete<Product>(url)
   }
 
-  //Contador Produto
+  // Total de Produto
   private _productCount = 0;
 
   setProductCount(count: number) {
