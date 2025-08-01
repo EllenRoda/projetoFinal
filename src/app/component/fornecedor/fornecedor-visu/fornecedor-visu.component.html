@@ -1,1 +1,138 @@
-<p>fornecedor-visu works!</p>
+<mat-card class="fundo1">
+    <div class="cor-normal">
+    <mat-card-title>Visualizar Fornecedor</mat-card-title>
+    </div>
+    <div class="com-cor-diferente">
+        <mat-card-title>Informações Pessoais</mat-card-title>
+    </div>
+  
+    <form>
+     <div class="form-grid"> 
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Nome Fanatasia" [value]="fornecedor.forNomeFantasia" disabled>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Razão Social" [value]="fornecedor.forRazaoSocial" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="CPF" [value]="fornecedor.forCpf" disabled>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Status</mat-label>
+        <mat-select [value]="fornecedor.forStatus" disabled>
+          <mat-option value="Ativo">Ativo</mat-option>
+          <mat-option value="Inativo">Inativo</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Responsavel" [value]="fornecedor.forResponsavel" disabled>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput [value]="fornecedor.forDataCadastro | date:'dd/MM/yyyy'" placeholder="Data de Cadastro" disabled>
+      </mat-form-field>
+     </div>
+    </form>
+    
+    <div class="com-cor-diferente">
+    <mat-card-title>Contato</mat-card-title>
+    </div>
+    <form>
+     <div class="form-grid">  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Celular" [value]="fornecedor.conCelular" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Telefone Comercial" [value]="fornecedor.conTelefoneComercial" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="E-mail" [value]="fornecedor.conEmail" disabled>
+      </mat-form-field>
+     </div>
+    </form> 
+    
+    <div class="com-cor-diferente">
+    <mat-card-title>Endereco</mat-card-title>
+    </div>
+    <form>
+     <div class="form-grid">  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Rua" [value]="fornecedor.endRua" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Número" [value]="fornecedor.endNumero" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Cidade" [value]="fornecedor.endCidade" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Bairro" [value]="fornecedor.endBairro" disabled>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Complemento" [value]="fornecedor.endComplemento" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Tipo de Residencia" [value]="fornecedor.endTipoResidencia" disabled>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="CEP" [value]="fornecedor.endCep" disabled>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Estado</mat-label>
+        <mat-select [value]="fornecedor.endEstado" disabled>
+          <mat-option value="Acre ( AC )">Acre "AC"</mat-option>
+          <mat-option value="Alagoas ( AL )">Alagoas "AL"</mat-option>
+          <mat-option value="Amapá ( AP )">Amapá "AP"</mat-option>
+          <mat-option value="Amazonas ( AM )">Amazonas "AM"</mat-option>
+          <mat-option value="Bahia ( BA )">Bahia "BA"</mat-option>
+          <mat-option value="Ceará ( CE )">Ceará "CE"</mat-option>
+          <mat-option value="Espírito Santo ( ES )">Espírito Santo "ES"</mat-option>
+          <mat-option value="Goiás ( GO )">Goiás "GO"</mat-option>
+          <mat-option value="Maranhão ( MA )">Maranhão "MA"</mat-option>
+          <mat-option value="Mato Grosso ( MT )">Mato Grosso "MT"</mat-option>
+          <mat-option value="Mato Grosso do Sul ( MS )">Mato Grosso do Sul "MS"</mat-option>
+          <mat-option value="Minas Gerais ( MG )">Minas Gerais "MG"</mat-option>
+          <mat-option value="Pará ( PA )">Pará "PA"</mat-option>
+          <mat-option value="Paraíba ( PB )">Paraíba "PB"</mat-option>
+          <mat-option value="Paraná ( PR )">Paraná "PR"</mat-option>
+          <mat-option value="Pernambuco ( PE )">Pernambuco "PE"</mat-option>
+          <mat-option value="Piauí ( PI )">Piauí "PI"</mat-option>
+          <mat-option value="Rio de Janeiro ( RJ )">Rio de Janeiro "RJ"</mat-option>
+          <mat-option value="Rio Grande do Norte ( RN )">Rio Grande do Norte "RN"</mat-option>
+          <mat-option value="Rio Grande do Sul ( RS )">Rio Grande do Sul "RS"</mat-option>
+          <mat-option value="Rondônia ( RO )">Rondônia "RO"</mat-option>
+          <mat-option value="Roraima ( RR )">Roraima "RR"</mat-option>
+          <mat-option value="Santa Catarina ( SC )">Santa Catarina "SC"</mat-option>
+          <mat-option value="São Paulo ( SP )">São Paulo "SP"</mat-option>
+          <mat-option value="Sergipe ( SE )">Sergipe "SE"</mat-option>
+          <mat-option value="Tocantins ( TO )">Tocantins "TO"</mat-option>
+          <mat-option value="Distrito Federal ( DF )">Distrito Federal "DF"</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>País</mat-label>
+        <mat-select [value]="fornecedor.endPais" disabled>
+          <mat-option value="Brasil">Brasil</mat-option>
+        </mat-select>
+      </mat-form-field>
+     </div> 
+    </form>
+  
+    <div class="button">
+        <button mat-raised-button class="btn-voltar" (click)="voltar()">Voltar</button>
+    </div>
+  </mat-card>

@@ -49,7 +49,7 @@
         <input matInput placeholder="Fabricante" [value]="product.proFabricante" disabled>
       </mat-form-field>
   
-      <mat-form-field>
+      <mat-form-field appearance="fill">
         <mat-label>Com Frete Gratis?</mat-label>
         <mat-select [value]="product.proFreteGratis" disabled>
           <mat-option value="Sim">Sim</mat-option>
@@ -57,7 +57,7 @@
         </mat-select>
       </mat-form-field>
   
-      <mat-form-field>
+      <mat-form-field appearance="fill">
         <mat-label>Produto Ativo?</mat-label>
         <mat-select [value]="product.proAtivo" disabled>
           <mat-option value="Ativo">Ativo</mat-option>
@@ -65,11 +65,11 @@
         </mat-select>
       </mat-form-field>
   
-      <mat-form-field>
+      <mat-form-field appearance="fill">
         <input matInput [value]="product.proDataCadastro | date:'dd/MM/yyyy'" placeholder="Data de Cadastro" disabled>
       </mat-form-field>
   
-      <mat-form-field>
+      <mat-form-field appearance="fill">
         <input matInput [value]="product.proDataAtualizacao | date:'dd/MM/yyyy'" placeholder="Data de Atualização" disabled>
       </mat-form-field>
   

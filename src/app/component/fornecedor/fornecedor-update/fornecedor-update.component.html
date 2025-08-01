@@ -1,1 +1,140 @@
-<p>fornecedor-update works!</p>
+<mat-card class="fundo1">
+    <div class="cor-normal">
+    <mat-card-title>Editar o Fornecedor</mat-card-title>
+    </div>
+    <div class="com-cor-diferente">
+        <mat-card-title>Informações Pessoais</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid">
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Nome Fanatasia" [(ngModel)]="fornecedor.forNomeFantasia" name="forNomeFantasia">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Razão Social" [(ngModel)]="fornecedor.forRazaoSocial" name="forRazaoSocial">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="CPF" [(ngModel)]="fornecedor.forCpf" name="forCpf" min="0">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Status</mat-label>
+                <mat-select [(ngModel)]="fornecedor.forStatus" name="forStatus">
+                    <mat-option value="Ativo">Ativo</mat-option>
+                    <mat-option value="Inativo">Inativo</mat-option>
+                </mat-select>
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Responsavel" [(ngModel)]="fornecedor.forResponsavel" name="forResponsavel">
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput [matDatepicker]="picker1" placeholder="Data de Cadastro" [(ngModel)]="fornecedor.forDataCadastro" name="forDataCadastro">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+        </div>
+    </form>
+    
+    <div class="com-cor-diferente">
+    <mat-card-title>Contato</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid">
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Celular" [(ngModel)]="fornecedor.conCelular" name="conCelular">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Telefone Comercial" [(ngModel)]="fornecedor.conTelefoneComercial" name="conTelefoneComercial">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="E-mail" [(ngModel)]="fornecedor.conEmail" name="conEmail">
+            </mat-form-field>
+        </div>
+    </form>
+    
+    <div class="com-cor-diferente">
+    <mat-card-title>Endereco</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid">
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Rua" [(ngModel)]="fornecedor.endRua" name="endRua">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Número" [(ngModel)]="fornecedor.endNumero" name="endNumero">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Cidade" [(ngModel)]="fornecedor.endCidade" name="endCidade">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Bairro" [(ngModel)]="fornecedor.endBairro" name="endBairro">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Complemento" [(ngModel)]="fornecedor.endComplemento" name="endComplemento">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Tipo de Residencia" [(ngModel)]="fornecedor.endTipoResidencia" name="endTipoResidencia">
+            </mat-form-field>
+            
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="CEP" [(ngModel)]="fornecedor.endCep" name="endCep">
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Estado</mat-label>
+                <mat-select [(ngModel)]="fornecedor.endEstado" name="endEstado">
+                    <mat-option value="Acre ( AC )">Acre "AC"</mat-option>
+                    <mat-option value="Alagoas ( AL )">Alagoas "AL"</mat-option>
+                    <mat-option value="Amapá ( AP )">Amapá "AP"</mat-option>
+                    <mat-option value="Amazonas ( AM )">Amazonas "AM"</mat-option>
+                    <mat-option value="Bahia ( BA )">Bahia "BA"</mat-option>
+                    <mat-option value="Ceará ( CE )">Ceará "CE"</mat-option>
+                    <mat-option value="Espírito Santo ( ES )">Espírito Santo "ES"</mat-option>
+                    <mat-option value="Goiás ( GO )">Goiás "GO"</mat-option>
+                    <mat-option value="Maranhão ( MA )">Maranhão "MA"</mat-option>
+                    <mat-option value="Mato Grosso ( MT )">Mato Grosso "MT"</mat-option>
+                    <mat-option value="Mato Grosso do Sul ( MS )">Mato Grosso do Sul "MS"</mat-option>
+                    <mat-option value="Minas Gerais ( MG )">Minas Gerais "MG"</mat-option>
+                    <mat-option value="Pará ( PA )">Pará "PA"</mat-option>
+                    <mat-option value="Paraíba ( PB )">Paraíba "PB"</mat-option>
+                    <mat-option value="Paraná ( PR )">Paraná "PR"</mat-option>
+                    <mat-option value="Pernambuco ( PE )">Pernambuco "PE"</mat-option>
+                    <mat-option value="Piauí ( PI )">Piauí "PI"</mat-option>
+                    <mat-option value="Rio de Janeiro ( RJ )">Rio de Janeiro "RJ"</mat-option>
+                    <mat-option value="Rio Grande do Norte ( RN )">Rio Grande do Norte "RN"</mat-option>
+                    <mat-option value="Rio Grande do Sul ( RS )">Rio Grande do Sul "RS"</mat-option>
+                    <mat-option value="Rondônia ( RO )">Rondônia "RO"</mat-option>
+                    <mat-option value="Roraima ( RR )">Roraima "RR"</mat-option>
+                    <mat-option value="Santa Catarina ( SC )">Santa Catarina "SC"</mat-option>
+                    <mat-option value="São Paulo ( SP )">São Paulo "SP"</mat-option>
+                    <mat-option value="Sergipe ( SE )">Sergipe "SE"</mat-option>
+                    <mat-option value="Tocantins ( TO )">Tocantins "TO"</mat-option>
+                    <mat-option value="Distrito Federal ( DF )">Distrito Federal "DF"</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="País" [(ngModel)]="fornecedor.endPais" name="endPais">
+            </mat-form-field>
+        </div>
+    </form>
+
+    <button mat-raised-button (click)="updateFornecedor()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

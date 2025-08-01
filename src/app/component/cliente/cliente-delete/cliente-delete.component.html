@@ -7,24 +7,24 @@
     </div>
     <form>
         <div class="form-grid"> 
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Nome" [value]="cliente.cliNome" name="cliNome" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="CPF" [value]="cliente.cliCpf" name="cliCpf" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Status" [value]="cliente.cliStatus" name="cliStatus" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput [matDatepicker]="picker1" placeholder="Data Nascimento" [value]="cliente.dataNascimento" name="dataNascimento" disabled>
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Estado Civil" [value]="cliente.estadoCivil" name="estadoCivil" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Profissão" [value]="cliente.profissao" name="proprofissao" disabled>
         </mat-form-field>
 
@@ -32,13 +32,13 @@
          <mat-card-title>Contato</mat-card-title>
         </div>
         <form>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Celular" [value]="cliente.conCelular" name="conCelular" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Telefone Comercial" [value]="cliente.conTelefoneComercial" name="conTelefoneComercial" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="E-mail" [value]="cliente.conEmail" name="conEmail" disabled>
         </mat-form-field>
         </form>
@@ -47,31 +47,31 @@
          <mat-card-title>Endereco</mat-card-title>
         </div>
         <form>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Rua" [value]="cliente.endRua" name="endRua" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Número" [value]="cliente.endNumero" name="endNumero" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Cidade" [value]="cliente.endCidade" name="endCidade" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Bairro" [value]="cliente.endBairro" name="endBairro" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Complemento" [value]="cliente.endComplemento" name="endComplemento" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Tipo de Residencia" [value]="cliente.endTipoResidencia" name="endTipoResidencia" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="CEP" [value]="cliente.endCep" name="endCep" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="Estado" [value]="cliente.endEstado" name="endEstado" disabled>
         </mat-form-field>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <input matInput placeholder="País" [value]="cliente.endPais" name="endPais" disabled>
         </mat-form-field>
         </form>

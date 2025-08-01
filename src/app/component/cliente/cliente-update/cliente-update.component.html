@@ -7,26 +7,26 @@
     </div>
     <form>
         <div class="form-grid">
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Nome" [(ngModel)]="cliente.cliNome" name="cliNome">
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="CPF" [(ngModel)]="cliente.cliCpf" name="cliCpf">
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Status" [(ngModel)]="cliente.cliStatus" name="cliStatus">
             </mat-form-field>
 
-            <mat-form-field>
+            <mat-form-field appearance="outline">
                 <input matInput [matDatepicker]="picker1" placeholder="Data do Nascimento"
                     [(ngModel)]="cliente.dataNascimento" name="dataNascimento">
                 <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                 <mat-datepicker #picker1></mat-datepicker>
             </mat-form-field>
 
-            <mat-form-field>
+            <mat-form-field appearance="outline">
                 <mat-label>Estado Civil</mat-label>
                 <mat-select [(ngModel)]="cliente.estadoCivil" name="estadoCivil">
                     <mat-option value="Solteiro">Solteiro</mat-option>
@@ -38,7 +38,7 @@
                 </mat-select>
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Profissão" [(ngModel)]="cliente.profissao" name="profissao">
             </mat-form-field>
 
@@ -50,15 +50,15 @@
     </div>
     <form>
         <div class="form-grid">
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Celular" [(ngModel)]="cliente.conCelular" name="conCelular">
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Telefone Comercial" [(ngModel)]="cliente.conTelefoneComercial" name="conTelefoneComercial">
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="E-mail" [(ngModel)]="cliente.conEmail" name="conEmail">
             </mat-form-field>
         </div>
@@ -69,35 +69,35 @@
     </div>
     <form>
         <div class="form-grid">    
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Rua" [(ngModel)]="cliente.endRua" name="endRua">
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Número" [(ngModel)]="cliente.endNumero" name="endNumero">
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Cidade" [(ngModel)]="cliente.endCidade" name="endCidade">
             </mat-form-field>
 
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Bairro" [(ngModel)]="cliente.endBairro" name="endBairro">
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Complemento" [(ngModel)]="cliente.endComplemento" name="endComplemento">
             </mat-form-field>
             
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="Tipo de Residencia" [(ngModel)]="cliente.endTipoResidencia" name="endTipoResidencia">
             </mat-form-field>
 
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="outline">
                 <input matInput placeholder="CEP" [(ngModel)]="cliente.endCep" name="endCep">
             </mat-form-field>
 
-            <mat-form-field>
+            <mat-form-field appearance="outline">
                 <mat-label>Estado</mat-label>
                 <mat-select [(ngModel)]="cliente.endEstado" name="endEstado">
                     <mat-option value="Acre ( AC )">Acre "AC"</mat-option>

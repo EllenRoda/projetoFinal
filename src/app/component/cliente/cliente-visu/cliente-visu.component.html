@@ -7,29 +7,29 @@
     </div>
     <form>
      <div class="form-grid"> 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Nome" [value]="cliente.cliNome" disabled>
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="CPF" [value]="cliente.cliCpf" disabled>
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Status" [value]="cliente.cliStatus" disabled>
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
             <input matInput [matDatepicker]="picker1" placeholder="Data Nascimento" [value]="cliente.dataNascimento" disabled>
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
         </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Estado Civil" [value]="cliente.estadoCivil" disabled>
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Profissão" [value]="cliente.profissao" disabled>
       </mat-form-field>
      </div>
@@ -40,15 +40,15 @@
     </div>
     <form>
      <div class="form-grid">
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Celular" [value]="cliente.conCelular" disabled>
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Telefone Comercial" [value]="cliente.conTelefoneComercial" disabled>
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="E-mail" [value]="cliente.conEmail" disabled>
       </mat-form-field>
      </div>
@@ -59,35 +59,35 @@
     </div>
     <form>
      <div class="form-grid">
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Rua" [value]="cliente.endRua" disabled>
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Número" [value]="cliente.endNumero" disabled>
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Cidade" [value]="cliente.endCidade" disabled>
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Bairro" [value]="cliente.endBairro" disabled>
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Complemento" [value]="cliente.endComplemento" disabled>
       </mat-form-field>
   
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="Tipo de Residencia" [value]="cliente.endTipoResidencia" disabled>
       </mat-form-field>
 
-      <mat-form-field appearance="fill">
+      <mat-form-field appearance="outline">
         <input matInput placeholder="CEP" [value]="cliente.endCep" disabled>
       </mat-form-field>
   
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>Estado</mat-label>
         <mat-select [value]="cliente.endEstado" disabled>
           <mat-option value="Acre ( AC )">Acre "AC"</mat-option>
@@ -120,7 +120,7 @@
         </mat-select>
       </mat-form-field>
   
-      <mat-form-field>
+      <mat-form-field appearance="outline">
         <mat-label>País</mat-label>
         <mat-select [value]="cliente.endPais" disabled>
           <mat-option value="Brasil">Brasil</mat-option>
