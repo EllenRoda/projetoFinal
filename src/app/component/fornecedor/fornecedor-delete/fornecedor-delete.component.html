@@ -1,6 +1,6 @@
 <mat-card class="fundo1">
     <div class="cor-normal">
-    <mat-card-title>Excluir Produto</mat-card-title>
+    <mat-card-title>Excluir Fornecedor</mat-card-title>
     </div>
     <div class="com-cor-diferente">
         <mat-card-title>Informações Pessoais</mat-card-title>
@@ -28,50 +28,76 @@
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-            <input matInput [matDatepicker]="picker1" placeholder="Data de Cadastro" [value]="product.proDataCadastro" name="proDataCadastro" disabled>
+            <input matInput [matDatepicker]="picker1" placeholder="Data de Cadastro" [value]="fornecedor.forDataCadastro" name="forDataCadastro" disabled>
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        </div>
+    </form>
+    
+    <div class="com-cor-diferente">
+    <mat-card-title>Contato</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid">
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Celular" [value]="fornecedor.conCelular" name="conCelular" disabled>
         </mat-form-field>
 
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Estoque" [value]="product.proEstoque" name="proEstoque" disabled>
+            <input matInput placeholder="Telefone Comercial" [value]="fornecedor.conTelefoneComercial" name="conTelefoneComercial" disabled>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Código de Barras" [value]="product.proCodigoBarras" name="proCodigoBarras" disabled>
+            <input matInput placeholder="E-mail" [value]="fornecedor.conEmail" name="conEmail" disabled>
         </mat-form-field>
+        </div>
+    </form>
+    
+    <div class="com-cor-diferente">
+    <mat-card-title>Endereco</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid">
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Cor" [value]="product.proCor" name="proCor" disabled>
+            <input matInput placeholder="Rua" [value]="fornecedor.endRua" name="endRua" disabled>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Material" [value]="product.proMaterial" name="proMaterial" disabled>
+            <input matInput placeholder="Número" [value]="fornecedor.endNumero" name="endNumero" disabled>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Fabricante" [value]="product.proFabricante" name="proFabricante" disabled>
+            <input matInput placeholder="Cidade" [value]="fornecedor.endCidade" name="endCidade" disabled>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Com Frete Gratis" [value]="product.proFreteGratis" name="proFreteGratis" disabled>
+            <input matInput placeholder="Bairro" [value]="fornecedor.endBairro" name="endBairro" disabled>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Status" [value]="product.proAtivo" name="proAtivo" disabled>
+            <input matInput placeholder="Complemento" [value]="fornecedor.endComplemento" name="endComplemento" disabled>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput [matDatepicker]="picker1" placeholder="Data de Cadastro" [value]="product.proDataCadastro" name="proDataCadastro" disabled>
-            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-            <mat-datepicker #picker1></mat-datepicker>
+            <input matInput placeholder="Tipo de Residencia" [value]="fornecedor.endTipoResidencia" name="endTipoResidencia" disabled>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput [matDatepicker]="picker1" placeholder="Data de Atualização" [value]="product.proDataAtualizacao" name="proDataAtualizacao" disabled>
-            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
-            <mat-datepicker #picker1></mat-datepicker>
+            <input matInput placeholder="CEP" [value]="fornecedor.endCep" name="endCep" disabled>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Descrição" [value]="product.proDescricao" name="proDescricao" disabled>
+            <input matInput placeholder="Estado" [value]="fornecedor.endEstado" name="endEstado" disabled>
         </mat-form-field>
-        
+
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="País" [value]="fornecedor.endPais" name="endPais" disabled>
+        </mat-form-field>
         </div>
     </form>
 
-    <button mat-raised-button (click)="deleteProduct()" color="warn">
+    <button mat-raised-button (click)="deleteFornecedor()" color="warn">
         Excluir
     </button>
    
