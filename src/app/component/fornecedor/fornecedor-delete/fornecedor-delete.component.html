@@ -1,1 +1,82 @@
-<p>fornecedor-delete works!</p>
+<mat-card class="fundo1">
+    <div class="cor-normal">
+    <mat-card-title>Excluir Produto</mat-card-title>
+    </div>
+    <div class="com-cor-diferente">
+        <mat-card-title>Informações Pessoais</mat-card-title>
+    </div>
+    <form>
+        <div class="form-grid"> 
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Nome Fanatasia" [value]="fornecedor.forNomeFantasia" name="forNomeFantasia" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Razão Social" [value]="fornecedor.forRazaoSocial" name="forRazaoSocial" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="CPF" [value]="fornecedor.forCpf" name="forCpf" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Status" [value]="fornecedor.forStatus" name="forStatus" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Responsavel" [value]="fornecedor.forResponsavel" name="forResponsavel" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <input matInput [matDatepicker]="picker1" placeholder="Data de Cadastro" [value]="product.proDataCadastro" name="proDataCadastro" disabled>
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Estoque" [value]="product.proEstoque" name="proEstoque" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Código de Barras" [value]="product.proCodigoBarras" name="proCodigoBarras" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Cor" [value]="product.proCor" name="proCor" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Material" [value]="product.proMaterial" name="proMaterial" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Fabricante" [value]="product.proFabricante" name="proFabricante" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Com Frete Gratis" [value]="product.proFreteGratis" name="proFreteGratis" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Status" [value]="product.proAtivo" name="proAtivo" disabled>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput [matDatepicker]="picker1" placeholder="Data de Cadastro" [value]="product.proDataCadastro" name="proDataCadastro" disabled>
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput [matDatepicker]="picker1" placeholder="Data de Atualização" [value]="product.proDataAtualizacao" name="proDataAtualizacao" disabled>
+            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <input matInput placeholder="Descrição" [value]="product.proDescricao" name="proDescricao" disabled>
+        </mat-form-field>
+        
+        </div>
+    </form>
+
+    <button mat-raised-button (click)="deleteProduct()" color="warn">
+        Excluir
+    </button>
+   
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

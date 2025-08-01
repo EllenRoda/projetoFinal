@@ -163,29 +163,3 @@ p{
   }
 }
 }
-/*.DoisFP {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-bottom: 16px;
-    margin: 15px 15px 5px 40px;
-    width: 4600px;
-
-@media (max-width: 768px) {
-  .form-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-}
-.card2 {
-    background: linear-gradient(145deg, #611111 0%, #a00909 100%);
-    padding: 20px;
-    border-radius: 25px;
-    box-shadow: 0 4px 15px rgba(51, 212, 214, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    width: 616px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}*/

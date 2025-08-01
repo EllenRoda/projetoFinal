@@ -10,18 +10,27 @@
         <mat-form-field appearance="fill">
             <input matInput placeholder="Nome Fanatasia" [(ngModel)]="fornecedor.forNomeFantasia" name="forNomeFantasia">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="Razão Social" [(ngModel)]="fornecedor.forRazaoSocial" name="forRazaoSocial">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput placeholder="CPF / CNPJ" [(ngModel)]="fornecedor.forCpf" name="forCpf">
+            <input matInput placeholder="CPF" [(ngModel)]="fornecedor.forCpf" name="forCpf">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
-            <input matInput placeholder="Status" [(ngModel)]="fornecedor.forStatus" name="forStatus">
+            <mat-label>Status</mat-label>
+              <mat-select [(ngModel)]="fornecedor.forStatus" name="forStatus">
+                <mat-option value="Ativo">Ativo</mat-option>
+                <mat-option value="Inativo">Inativo</mat-option>
+              </mat-select>
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="Responsavel" [(ngModel)]="fornecedor.forResponsavel" name="forResponsavel">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput type="string" [matDatepicker]="picker1" placeholder="Data de Cadastro" [(ngModel)]="fornecedor.forDataCadastro" name="forDataCadastro">
             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
@@ -38,9 +47,11 @@
         <mat-form-field appearance="fill">
             <input matInput placeholder="Celular" [(ngModel)]="fornecedor.conCelular" name="conCelular">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="Telefone Comercial" [(ngModel)]="fornecedor.conTelefoneComercial" name="conTelefoneComercial">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="E-mail" [(ngModel)]="fornecedor.conEmail" name="conEmail">
         </mat-form-field>
@@ -55,21 +66,27 @@
         <mat-form-field appearance="fill">
             <input matInput placeholder="Rua" [(ngModel)]="fornecedor.endRua" name="endRua">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="Número" [(ngModel)]="fornecedor.endNumero" name="endNumero">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="Cidade" [(ngModel)]="fornecedor.endCidade" name="endCidade">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="Bairro" [(ngModel)]="fornecedor.endBairro" name="endBairro">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="Complemento" [(ngModel)]="fornecedor.endComplemento" name="endComplemento">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="Tipo de Residencia" [(ngModel)]="fornecedor.endTipoResidencia" name="endTipoResidencia">
         </mat-form-field>
+
         <mat-form-field appearance="fill">
             <input matInput placeholder="CEP" [(ngModel)]="fornecedor.endCep" name="endCep">
         </mat-form-field>

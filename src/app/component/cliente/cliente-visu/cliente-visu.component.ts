@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Cliente } from '../cliente.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ClienteService } from '../cliente.service';
@@ -8,7 +8,7 @@ import { ClienteService } from '../cliente.service';
   templateUrl: './cliente-visu.component.html',
   styleUrls: ['./cliente-visu.component.css']
 })
-export class ClienteVisuComponent {
+export class ClienteVisuComponent implements OnInit{
 cliente: Cliente = {
   cliNome: '',
   cliCpf: '',
@@ -16,9 +16,11 @@ cliente: Cliente = {
   dataNascimento: '',
   estadoCivil: '',
   profissao: '',
+
   conCelular: '',
   conTelefoneComercial: '',
   conEmail: '',
+  
   endRua: '',
   endNumero: '',
   endCidade: '',
@@ -38,8 +40,8 @@ cliente: Cliente = {
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
     if (id) {
-      this.clienteService.readById(id).subscribe((prod: Cliente) => {
-        this.cliente = prod;
+      this.clienteService.readById(id).subscribe((clie: Cliente) => {
+        this.cliente = clie;
       });
     }
   }
